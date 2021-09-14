@@ -17,6 +17,14 @@
             </div>
         </div>
 
+
+    <div class="right-align">
+        <a href="{{url()->previous()}}" class="btn-flat waves-effect">Cancelar</a>
+        <button class="btn waves-effect waves-light" type="submit">
+            Salvar
+
+    </div>
+
     </form>
 </section>
 
