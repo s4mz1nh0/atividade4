@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Admin\GamesController;
+use App\Http\Controllers\Admin\FotoController;
 use App\Http\Controllers\Admin\CompatibilidadeController;
 
 /*
@@ -28,6 +29,7 @@ Route::prefix('Admin')->name('Admin.')->group(function(){
 
     Route::resource('Games', GamesController::class)->except(['show']);
     Route::resource('Compatibilidades', CompatibilidadeController::class);
+    Route::resource('Games.Fotos', FotoController::class)->except('show', 'edit', 'update');
 
 });
 

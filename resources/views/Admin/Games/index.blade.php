@@ -22,6 +22,14 @@
 
                         <td class="right-align">
 
+
+                            {{--Fotos--}}
+                            <a href="{{route('Admin.Games.Fotos.index', $game->id)}}" title="Fotos">
+                                <span>
+                                    <i class="material-icons pink-text text-lighten-3">insert_photo</i>
+                                </span>
+                            </a>
+
                             <a href="{{route('Admin.Games.edit', $game->id)}}">
                             <span>
                                 <i class="material-icons pink-text text-lighten-3">edit</i>
